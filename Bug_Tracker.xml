@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database content_db_lang_sl="record" content_db_lang_pl="records" content_db_lang_su="Record" content_db_lang_pu="Records" content_db_lang_ia="a record">
+ <data use_categories="0" template_listing="listing" template_display="display" template_categories="category_index" all_editable="0" revisions="1" field_title="5" field_content="6" field_sort="primary_id_field" field_direction="asc" field_perpage="25" comment_approve="0" record_approve="0" rss="0" comment_bump="1" forum_record="0" forum_comments="0" forum_delete="0" forum_forum="0" forum_prefix="" forum_suffix="" search="1" tags_enabled="0" tags_noprefixes="1" tags_predefined="" cat_index_type="0" template_form="form" template_featured="category_articles" options="1">
+  <fixed_field_perms><![CDATA[{"record_image":{"visible":true,"perm_view":"*","perm_2":"*","perm_3":"*"},"record_expiry_date":{"visible":false,"perm_view":"7,8,4","perm_2":"7,8,4","perm_3":"7,8,4"}}]]></fixed_field_perms>
+  <fixed_field_settings><![CDATA[[]]]></fixed_field_settings>
+  <featured_settings><![CDATA[{"featured":0,"perpage":10,"pagination":null,"sort":"record_publish_date","direction":"desc","categories":0}]]></featured_settings>
+  <name><![CDATA[Bug Tracker]]></name>
+  <description><![CDATA[]]></description>
+ </data>
+ <field field_id="5" field_key="title" field_type="Text" field_required="1" field_user_editable="1" field_position="0" field_max_length="0" field_html="1" field_truncate="100" field_display_listing="1" field_display_display="1" field_format_opts="{&quot;1&quot;:&quot;strtolower&quot;}" field_validator="0" field_topic_format="" field_filter="0" field_allowed_extensions="[]" field_is_multiple="0" field_is_searchable="1" field_validator_custom="" field_display_commentform="0" field_unique="1" field_allow_attachments="1">
+  <field_extra></field_extra>
+  <field_default_value></field_default_value>
+  <field_name>Title</field_name>
+  <field_description></field_description>
+  <field_display_json><![CDATA[{"display":{"method":"1","html":"{{if ($formValue=='pending')}}\r\n<span class=\"ipsBadge ipsBadge_style3 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='fixed')}}\r\n<span class=\"ipsBadge ipsBadge_style4 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='closed')}}\r\n<span class=\"ipsBadge ipsBadge_style6 ipsPos_right\">{$value|raw}<\/span>\r\n{{endif}}","where":"bottom"},"listing":{"method":"1","html":"{{if ($formValue=='pending')}}\r\n<span class=\"ipsBadge ipsBadge_style3 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='fixed')}}\r\n<span class=\"ipsBadge ipsBadge_style4 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='closed')}}\r\n<span class=\"ipsBadge ipsBadge_style6 ipsPos_right\">{$value|raw}<\/span>\r\n{{endif}}","right":false}}]]></field_display_json>
+  <field_validator_error></field_validator_error>
+ </field>
+ <field field_id="6" field_key="contentfield_3" field_type="Editor" field_required="1" field_user_editable="1" field_position="0" field_max_length="0" field_html="0" field_truncate="100" field_display_listing="1" field_display_display="1" field_format_opts="" field_validator="" field_topic_format="{value}" field_filter="0" field_allowed_extensions="" field_is_multiple="0" field_is_searchable="1" field_validator_custom="" field_display_commentform="0" field_unique="0" field_allow_attachments="1">
+  <field_extra></field_extra>
+  <field_default_value></field_default_value>
+  <field_name>Content</field_name>
+  <field_description></field_description>
+  <field_display_json><![CDATA[{"display":{"method":null},"listing":{"method":null}}]]></field_display_json>
+ </field>
+ <field field_id="7" field_key="status" field_type="Select" field_required="0" field_user_editable="0" field_position="5" field_max_length="0" field_html="0" field_truncate="0" field_display_listing="1" field_display_display="1" field_format_opts="{&quot;1&quot;:&quot;strtolower&quot;}" field_validator="0" field_topic_format="" field_filter="1" field_allowed_extensions="[]" field_is_multiple="0" field_is_searchable="1" field_validator_custom="" field_display_commentform="0" field_unique="1" field_allow_attachments="1">
+  <field_extra><![CDATA[{"pending":"penging","fixed":"fixed","Closed":"Closed"}]]></field_extra>
+  <field_default_value>pending</field_default_value>
+  <field_name>Status</field_name>
+  <field_description></field_description>
+  <field_display_json><![CDATA[{"display":{"method":"custom","html":"{{if ($formValue=='pending')}}\r\n<span class=\"ipsBadge ipsBadge_style3 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='fixed')}}\r\n<span class=\"ipsBadge ipsBadge_style4 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='closed')}}\r\n<span class=\"ipsBadge ipsBadge_style6 ipsPos_right\">{$value|raw}<\/span>\r\n{{endif}}","where":"top"},"listing":{"method":"custom","html":"{{if ($formValue=='pending')}}\r\n<span class=\"ipsBadge ipsBadge_style3 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='fixed')}}\r\n<span class=\"ipsBadge ipsBadge_style4 ipsPos_right\">{$value|raw}<\/span>\r\n{{elseif ($formValue=='closed')}}\r\n<span class=\"ipsBadge ipsBadge_style6 ipsPos_right\">{$value|raw}<\/span>\r\n{{endif}}"}}]]></field_display_json>
+ </field>
+ <category category_id="2" category_parent_id="0" category_position="0" category_records_queued="0" category_has_perms="0" category_show_records="1" category_furl_name="records" category_allow_rating="0" category_fields="" category_records_future="0" category_record_reviews="0" category_record_reviews_queued="0" category_options="0" category_template_listing="" category_template_display="" category_can_view_others="1" category_allow_anonymous="0">
+  <category_name>Records</category_name>
+  <category_description></category_description>
+ </category>
+</database>
